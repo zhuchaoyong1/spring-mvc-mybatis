@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ky.plat.mapper.DevierTypeMapper">
+	<select id="queryAllList" resultType="DevierType">
+		select 
+		  id            id,
+		  type_name     typeName,
+		  type_purpose  typePurpose,
+		  description   description,
+		  `status`      status,
+		  create_time   createTime,
+		  creator       creator,
+		  modify_time   modifyTime,
+		  modifier      modifier
+		 from hms_device_type
+	</select>
+</mapper>
